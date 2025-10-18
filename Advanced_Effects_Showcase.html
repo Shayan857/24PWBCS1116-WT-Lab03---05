@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WT Lab — Task 10</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#f6f8fb;color:#111827;text-align:center}
+.container{max-width:1000px;margin:auto;background:#fff;border-radius:8px;padding:25px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+h1{color:#0b63d8;margin-bottom:20px}
+.section{margin:25px 0}
+.gradient-text{font-size:36px;font-weight:700;background:linear-gradient(90deg,#0b63d8,#10b981);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.custom-inputs{display:flex;justify-content:center;gap:25px;margin-top:10px}
+input[type=checkbox],input[type=radio]{appearance:none;width:20px;height:20px;border:2px solid #0b63d8;border-radius:4px;cursor:pointer;position:relative;transition:.3s}
+input[type=checkbox]:checked{background:#0b63d8}
+input[type=radio]{border-radius:50%}
+input[type=radio]:checked{background:#10b981}
+.loader{width:50px;height:50px;border:5px solid #e5e7eb;border-top:5px solid #0b63d8;border-radius:50%;animation:spin 1s linear infinite;margin:20px auto}
+@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.clip-text{font-size:32px;font-weight:800;background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800') center/cover;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.shadow-box{width:150px;height:150px;background:#0b63d8;margin:20px auto;border-radius:12px;box-shadow:20px 20px 40px rgba(11,99,216,.3),-10px -10px 20px rgba(255,255,255,.5)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Advanced Effects Showcase</h1>
+
+<div class="section">
+<h2>Gradient Text</h2>
+<p class="gradient-text">Beautiful Gradient Heading</p>
+</div>
+
+<div class="section">
+<h2>Custom Inputs</h2>
+<div class="custom-inputs">
+<label><input type="checkbox" checked> Checkbox</label>
+<label><input type="radio" name="opt" checked> Radio</label>
+<label><input type="radio" name="opt"> Radio</label>
+</div>
+</div>
+
+<div class="section">
+<h2>Loading Animation</h2>
+<div class="loader"></div>
+</div>
+
+<div class="section">
+<h2>Text Clipping with Background</h2>
+<p class="clip-text">Nature Inside Text</p>
+</div>
+
+<div class="section">
+<h2>Complex Shadow Effect</h2>
+<div class="shadow-box"></div>
+</div>
+</div>
+</body>
+</html>
