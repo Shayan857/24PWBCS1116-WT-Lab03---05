@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WT Lab — Task 3</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#f6f8fb;color:#111827}
+.container{max-width:1000px;margin:auto;background:#fff;border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+h1{color:#0b63d8;text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
+.box{height:140px;border-radius:8px;color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:bold}
+.solid{background:#0b63d8}
+.image{background-image:url('https://via.placeholder.com/300x200.png?text=Pattern');background-repeat:repeat;background-size:200px}
+.linear{background:linear-gradient(45deg,#06b6d4,#0b7cff)}
+.radial{background:radial-gradient(circle at 30% 30%,#fde68a,#fb7185)}
+.multiple{background:url('https://via.placeholder.com/300x200.png?text=Layer'),linear-gradient(90deg,rgba(11,124,255,.5),rgba(6,182,212,.5));background-blend-mode:multiply;background-size:cover}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Background Gallery</h1>
+<div class="gallery">
+<div class="box solid">Solid Color</div>
+<div class="box image">Image Repeat</div>
+<div class="box linear">Linear Gradient</div>
+<div class="box radial">Radial Gradient</div>
+<div class="box multiple">Multiple Layers + Blend</div>
+</div>
+</div>
+</body>
+</html>
