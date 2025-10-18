@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WT Lab — Task 6</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#f6f8fb;color:#111827}
+.container{max-width:500px;margin:auto;background:#fff;border-radius:8px;padding:25px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+h1{text-align:center;color:#0b63d8;margin-bottom:20px}
+form{display:flex;flex-direction:column;gap:14px}
+input,select,textarea{padding:10px;border-radius:6px;border:1px solid #e6eefc;font-size:15px;transition:all .25s ease;background:#fff}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0b63d8;box-shadow:0 0 8px rgba(11,99,216,.2)}
+button{padding:10px 18px;background:linear-gradient(180deg,#0b63d8,#094ca8);color:#fff;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:.3s}
+button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,99,216,.25)}
+.error{border-color:#dc2626;background:#fef2f2}
+.success{color:#059669;font-weight:600;text-align:center;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Registration Form</h1>
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<select>
+<option>Choose your course</option>
+<option>Web Technologies</option>
+<option>Cybersecurity</option>
+<option>Data Structures</option>
+</select>
+<textarea rows="3" placeholder="Write a short note"></textarea>
+<input type="text" class="error" placeholder="Invalid Entry">
+<button type="submit">Register</button>
+<p class="success">Registration Successful!</p>
+</form>
+</div>
+</body>
+</html>
