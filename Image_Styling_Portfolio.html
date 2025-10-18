@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WT Lab — Task 4</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#f6f8fb;color:#111827}
+.container{max-width:1000px;margin:auto;background:#fff;border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+h1{text-align:center;color:#0b63d8}
+.gallery{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+.card{position:relative;width:200px;height:160px;overflow:hidden;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.1);transition:transform .3s,box-shadow .3s}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .3s,filter .3s}
+.card:hover img{transform:scale(1.1);filter:brightness(.9)}
+.rounded img{border-radius:12px}
+.circle img{border-radius:50%;width:160px;height:160px}
+.border img{border:4px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+.overlay{position:absolute;bottom:0;left:0;width:100%;height:40%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.6));display:flex;align-items:flex-end;justify-content:center;color:#fff;font-weight:bold;opacity:0;transition:opacity .3s}
+.card:hover .overlay{opacity:1}
+.filter img{filter:grayscale(100%)}
+.filter:hover img{filter:grayscale(0%)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Image Styling Portfolio</h1>
+<div class="gallery">
+<div class="card rounded">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400" alt="Mountain Landscape">
+  <div class="overlay">Rounded Corners</div>
+</div>
+<div class="card circle">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Ocean Waves">
+  <div class="overlay">Circular Image</div>
+</div>
+<div class="card border">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400" alt="Forest Path">
+  <div class="overlay">Border + Shadow</div>
+</div>
+<div class="card filter">
+  <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=400" alt="Desert Scene">
+  <div class="overlay">Grayscale Filter</div>
+</div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400" alt="Hover Landscape">
+  <div class="overlay">Hover Effect</div>
+</div>
+</div>
+</div>
+</body>
+</html>
