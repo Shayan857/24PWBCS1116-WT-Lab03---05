@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WT Lab — Task 1</title>
+  <style>
+    *{box-sizing:border-box}
+    body{font-family:Arial,Helvetica,sans-serif;margin:18px;background:#f6f8fb;color:#111827}
+    .card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 8px 22px rgba(12,20,40,.06);max-width:980px;margin:12px auto}
+    h1{margin:0 0 8px 0;font-size:20px}
+    h2{font-size:16px;margin:8px 0;color:#0b63d8}
+    p.note{color:#6b7280;margin-top:6px;font-size:14px}
+    p.example{margin:8px 0;padding:6px;background:#f8fafc;border-left:4px solid #dbeafe}
+    .highlight{color:#075985;font-weight:600}
+    #main-title{font-family:Georgia,serif;color:#0b5cff}
+    body h2{letter-spacing:.1px}
+    [data-role]{background:#fff7ed;padding:6px;border-radius:6px;display:inline-block}
+    a[data-type="external"]{color:#b45309;text-decoration:underline}
+    a[href*="example"]{font-weight:700}
+    .combo p{color:#0f172a}
+    .combo>ul>li{list-style:disc;margin-left:18px}
+    .adj{display:block;padding:8px;background:#eef2ff;border-radius:6px}
+    .adj+p{color:#7c3aed;margin-top:6px}
+    .sib{display:block;padding:8px;background:#fef3c7;border-radius:6px}
+    .sib~p{color:#dc2626;margin-top:6px}
+    .links a:link{color:#0b7cff}
+    .links a:visited{color:#6b7280;opacity:.9}
+    .links a:hover{text-decoration:underline;transform:translateY(-1px)}
+    input[type="text"]:focus{outline:3px solid rgba(11,124,255,.12)}
+    .list-demo li:nth-child(odd){background:#fafafa;padding:6px;border-radius:4px}
+    .quote::before{content:"“";font-size:28px;color:#0b7cff;margin-right:6px;vertical-align:middle}
+    .fancy-btn::after{content:" ➜";opacity:.9}
+    .demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+    .box{padding:10px;border-radius:8px;background:#fff;border:1px solid rgba(12,20,40,.04)}
+    .muted{color:#6b7280;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="main-title">WT Lab — Task 1: CSS Selectors Practice</h1>
+    <p class="note">Demonstration of selectors</p>
+
+    <h2>Basic selectors</h2>
+    <div class="demo-grid">
+      <div class="box"><h3>Element</h3><p class="example">Element selector applied</p></div>
+      <div class="box"><h3>Class</h3><p class="highlight">Using class selector</p></div>
+      <div class="box"><h3>ID</h3><p id="unique" class="muted">Example of id selector</p></div>
+      <div class="box"><h3>Universal</h3><p class="muted">Universal selector applied</p></div>
+      <div class="box"><h3>Descendant</h3><div class="combo"><p>Paragraph inside .combo</p></div></div>
+    </div>
+
+    <h2>Attribute selectors</h2>
+    <div class="demo-grid">
+      <div class="box"><span data-role="badge">Has data-role</span></div>
+      <div class="box"><a href="https://external.example.com" data-type="external">External link</a></div>
+      <div class="box"><a href="https://some-example-site.com">Contains "example"</a></div>
+    </div>
+
+    <h2>Combinators</h2>
+    <div class="demo-grid">
+      <div class="box"><div class="combo"><ul><li>Child 1</li><li>Child 2</li></ul></div></div>
+      <div class="box"><div class="adj">.adj element</div><p>Adjacent sibling styled</p></div>
+      <div class="box"><div class="sib">.sib element</div><p>General sibling styled</p></div>
+      <div class="box"><div><div class="combo"><p>Descendant styled</p></div></div></div>
+    </div>
+
+    <h2>Pseudo-classes</h2>
+    <div class="demo-grid">
+      <div class="box">
+        <div class="links">
+          <a href="https://example.com">Unvisited link</a><br/>
+          <a href="https://example.com/visited">Visited link</a>
+        </div>
+      </div>
+      <div class="box">
+        <input type="text" placeholder="Focus to see style" style="padding:8px;border-radius:6px;border:1px solid #e6eefc;">
+      </div>
+      <div class="box">
+        <ul class="list-demo">
+          <li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Pseudo-elements</h2>
+    <div class="demo-grid">
+      <div class="box"><p class="quote">Decorative quote</p></div>
+      <div class="box"><button class="fancy-btn" title="Send Form" style="padding:8px 12px;border-radius:8px;border:0;background:#0b7cff;color:white;cursor:pointer;">Submit</button></div>
+    </div>
+  </div>
+</body>
+</html>
