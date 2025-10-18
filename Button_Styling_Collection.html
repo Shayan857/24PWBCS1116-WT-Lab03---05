@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WT Lab — Task 5</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#f6f8fb;color:#111827}
+.container{max-width:900px;margin:auto;background:#fff;border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+h1{text-align:center;color:#0b63d8;margin-bottom:20px}
+.button-group{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+button{border:none;cursor:pointer;border-radius:8px;font-size:15px;font-weight:600;transition:all .25s ease;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.small{padding:6px 12px;font-size:13px}
+.medium{padding:10px 18px}
+.large{padding:14px 24px;font-size:17px}
+.primary{background:linear-gradient(180deg,#0b63d8,#094ca8);color:#fff}
+.success{background:linear-gradient(180deg,#10b981,#059669);color:#fff}
+.warning{background:linear-gradient(180deg,#f59e0b,#d97706);color:#fff}
+.round{border-radius:50px}
+.outline{background:transparent;color:#0b63d8;border:2px solid #0b63d8}
+button:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(11,99,216,.25)}
+button:focus{outline:3px solid rgba(11,99,216,.25)}
+button:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Button Styling Collection</h1>
+<div class="button-group">
+<button class="small primary">Small Primary</button>
+<button class="medium primary">Medium Primary</button>
+<button class="large primary">Large Primary</button>
+<button class="medium success">Success</button>
+<button class="medium warning">Warning</button>
+<button class="medium outline">Outline</button>
+<button class="medium primary round">Round</button>
+<button class="medium primary" disabled>Disabled</button>
+</div>
+</div>
+</body>
+</html>
